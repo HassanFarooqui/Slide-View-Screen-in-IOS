@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G18013" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DA6-eh-bey">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ess-8q-h4p">
+            <objects>
+                <viewController id="DA6-eh-bey" customClass="ViewController" customModule="SlideView2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDQ-Xg-fAc"/>
+                        <viewControllerLayoutGuide type="bottom" id="nnp-Di-i1F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ucj-bS-dM8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmQ-4X-6Fr">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Uac-wt-wtM"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="nKf-xR-UoF">
+                                        <barButtonItem key="leftBarButtonItem" image="SlideMenu" id="vU3-fW-r8N">
+                                            <connections>
+                                                <action selector="BtnOpen:" destination="DA6-eh-bey" id="z8c-Wz-Bep"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-j6-xIe">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EgZ-Tg-jKk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.72941176470000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nnp-Di-i1F" firstAttribute="top" secondItem="N4a-j6-xIe" secondAttribute="bottom" id="6v4-jO-AGD"/>
+                            <constraint firstAttribute="trailing" secondItem="GmQ-4X-6Fr" secondAttribute="trailing" id="8JY-yO-wMU"/>
+                            <constraint firstItem="GmQ-4X-6Fr" firstAttribute="top" secondItem="ucj-bS-dM8" secondAttribute="top" constant="16" id="Fit-C4-7VN"/>
+                            <constraint firstItem="N4a-j6-xIe" firstAttribute="top" secondItem="GmQ-4X-6Fr" secondAttribute="bottom" id="JnQ-gO-kz1"/>
+                            <constraint firstItem="N4a-j6-xIe" firstAttribute="leading" secondItem="ucj-bS-dM8" secondAttribute="leading" id="UmR-Q9-gE8"/>
+                            <constraint firstItem="GmQ-4X-6Fr" firstAttribute="leading" secondItem="ucj-bS-dM8" secondAttribute="leading" id="X80-OT-OEe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leadingConstraints" destination="UmR-Q9-gE8" id="8vk-du-yOn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCU-dZ-u83" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917.60000000000002" y="510.49475262368821"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bb5-bx-AFU">
+            <objects>
+                <viewController id="2bS-QL-fY9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zAF-MK-ShU"/>
+                        <viewControllerLayoutGuide type="bottom" id="wS7-DY-qqG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q7Y-lB-yn2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csj-HM-uAp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QLx-qL-jN0"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="b07-CE-be4"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="csj-HM-uAp" secondAttribute="trailing" id="ZBl-9F-AYq"/>
+                            <constraint firstItem="csj-HM-uAp" firstAttribute="top" secondItem="q7Y-lB-yn2" secondAttribute="top" constant="17" id="ds1-C6-0nw"/>
+                            <constraint firstItem="csj-HM-uAp" firstAttribute="leading" secondItem="q7Y-lB-yn2" secondAttribute="leading" id="vPY-xT-umS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPN-Ha-uq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="510"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SlideMenu" width="37" height="37"/>
+    </resources>
+</document>
